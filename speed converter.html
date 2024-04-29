@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>USD to FRW MONEY CONVERTER</title>
+<body>
+
+<h2>Money Converter</h2>
+<p>Type a value in the USD field to convert the value to FRW:</p>
+
+<p>
+  <label>USD</label>
+  <input id="inputUSD" type="number" placeholder="USD" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+</p>
+<p>FRW: <span id="outputFRW"><input button="button"value="convert"></button></span></p>
+
+<script>
+function moneyConverter(valNum) {
+  document.getElementById("outputFRW").innerHTML=valNum*1300;
+}
+</script>
+
+</body>
+</html>
